@@ -47,3 +47,106 @@ insurance-analytics/
 ├── dvc.yaml # DVC pipeline definition
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
+
+
+---
+
+##  Key Tasks
+
+### Task 1 – Git & Exploratory Data Analysis (EDA)
+
+- Set up Git version control and GitHub repository
+- Create development branches per task
+- Perform descriptive statistical analysis
+- Create insightful visualizations (univariate, bivariate, multivariate)
+- Assess missing values and data quality
+
+>  Branch: `task-1`
+
+---
+
+### Task 2 – Data Version Control (DVC)
+
+- Initialize DVC in the repo
+- Track raw data files using `dvc add`
+- Configure and push to a local DVC remote
+- Ensure reproducibility across environments
+
+>  Branch: `task-2`
+
+---
+
+### Task 3 – A/B Hypothesis Testing
+
+Test the following hypotheses:
+
+- Risk does not differ across provinces
+- Risk does not differ across zip codes
+- No significant profit margin differences by zip code
+- No risk difference between men and women
+
+> Methods: T-test, Z-test, Chi-squared test  
+> Result interpretation based on p-values and effect sizes
+
+>  Branch: `task-3`
+
+---
+
+### Task 4 – Statistical Modeling
+
+- **Preprocessing:** Encoding, missing value treatment, feature creation
+- **Modeling Techniques:**
+  - Linear Regression
+  - Random Forest
+  - XGBoost
+- **Evaluation Metrics:** RMSE, MAE, Precision, Recall, F1-score
+- **Model Interpretation:** SHAP / LIME for explaining key feature effects
+
+>  Branch: `task-4`
+
+---
+
+##  CI/CD Pipeline
+
+CI/CD is implemented with **GitHub Actions** to automate:
+
+- Code quality checks (linting)
+- Data pipeline testing
+- Notebook execution validation
+- Trigger on push and PR to main
+
+> YAML workflow file available in `.github/workflows/ci.yml`
+
+---
+
+##  Learning Outcomes
+
+- Hands-on practice with data cleaning, EDA, and statistical testing
+- Practical A/B test design and analysis for business decisions
+- Application of regression and ensemble modeling for claim prediction
+- Use of DVC for reproducible machine learning pipelines
+- CI/CD pipeline setup for ML workflows
+
+---
+
+
+##  References
+
+- [DVC Documentation](https://dvc.org/doc)
+- [Understanding A/B Testing](https://www.optimizely.com/optimization-glossary/ab-testing/)
+- [Random Forest Algorithm – Analytics Vidhya](https://www.analyticsvidhya.com/blog/2021/06/random-forest-algorithm/)
+- [XGBoost Explained](https://www.analyticsvidhya.com/blog/2018/09/an-end-to-end-guide-to-understand-the-math-behind-xgboost/)
+- [SHAP: Explain Model Predictions](https://shap.readthedocs.io/en/latest/)
+
+---
+
+##  Get Involved
+
+-  [Raise an Issue](https://github.com/your-org/Insurance-Analytics-Mastery/issues)
+-  Submit a [Pull Request](https://github.com/your-org/Insurance-Analytics-Mastery/pulls)
+-  Clone and explore locally
+
+```bash
+git clone https://github.com/your-org/Insurance-Analytics-Mastery.git
+cd Insurance-Analytics-Mastery
+pip install -r requirements.txt
