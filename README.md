@@ -37,3 +37,13 @@ The dataset spans from **Feb 2014 to Aug 2015**, containing:
 
 ## 📁 Project Structure
 
+insurance-analytics/
+├── data/ # DVC-tracked raw and processed data
+├── notebooks/ # EDA, A/B testing, modeling experiments
+├── models/ # Trained model artifacts
+├── src/ # Core Python modules and reusable scripts
+├── .dvc/ # DVC configuration
+├── .github/workflows/ # CI/CD workflows (GitHub Actions)
+├── dvc.yaml # DVC pipeline definition
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
